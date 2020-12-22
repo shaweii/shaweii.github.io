@@ -1,13 +1,3 @@
-/**
- * boxlayout.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
 var Boxlayout = (function() {
 
     var $el = $('#bl-main'),
@@ -142,8 +132,8 @@ var Boxlayout = (function() {
 
             $nextPanel.addClass('bl-show-work');
             if (video.paused !== true && video.ended !== true) {
-				video.pause();
-			}
+                video.pause();
+            }
             $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
             return false;
 
@@ -173,8 +163,8 @@ var Boxlayout = (function() {
 
                     $nextPanel.addClass('bl-show-work');
                     if (video.paused !== true && video.ended !== true) {
-						video.pause();
-					}
+                        video.pause();
+                    }
                     $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
                     return false;
                 }
@@ -201,10 +191,10 @@ var Boxlayout = (function() {
                     }
 
                     $nextPanel.addClass('bl-show-work');
-					if (video.paused !== true && video.ended !== true) {
-						video.pause();
-					}
-					$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+                    if (video.paused !== true && video.ended !== true) {
+                        video.pause();
+                    }
+                    $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
                     return false;
                 }
 
@@ -214,8 +204,8 @@ var Boxlayout = (function() {
                         $workPanelsContainer.removeClass('bl-panel-items-show');
                         $workPanels.eq(currentWorkPanel).removeClass('bl-show-work');
                         if (video.paused !== true && video.ended !== true) {
-							video.pause();
-						}
+                            video.pause();
+                        }
                         $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
                         return false;
                     }
@@ -248,11 +238,11 @@ var Boxlayout = (function() {
                 isAnimating = false;
             }
 
-			$nextPanel.addClass('bl-show-work');
+            $nextPanel.addClass('bl-show-work');
             $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-			if (video.paused !== true && video.ended !== true) {
-				video.pause();
-			}
+            if (video.paused !== true && video.ended !== true) {
+                video.pause();
+            }
             return false;
 
         });
@@ -264,9 +254,9 @@ var Boxlayout = (function() {
             $sectionWork.removeClass('bl-scale-down');
             $workPanelsContainer.removeClass('bl-panel-items-show');
             $workPanels.eq(currentWorkPanel).removeClass('bl-show-work');
-			if (video.paused !== true && video.ended !== true) {
-				video.pause();
-			}
+            if (video.paused !== true && video.ended !== true) {
+                video.pause();
+            }
             $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
             return false;
 
